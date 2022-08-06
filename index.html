@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terminal Velocity Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="terminalVelocityRadio" name="variables" checked>
+  <label for="terminalVelocityRadio">Terminal Velocity</label>
+
+  <input type="radio" id="massoftheobjectRadio" name="variables">
+  <label for="massoftheobjectRadio">Mass of the object</label>
+
+  <input type="radio" id="densityRadio" name="variables">
+  <label for="densityRadio">Density</label>
+
+  <input type="radio" id="projectedAreaRadio" name="variables">
+  <label for="projectedAreaRadio">Projected Area</label>
+
+  <input type="radio" id="dragCoefficientRadio" name="variables">
+  <label for="dragCoefficientRadio">Drag Coefficient</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(m) Mass of the object (kg)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(ρ) Density (kg/m³)</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(A) Projected Area (m²)</label>
+  <input type="number" id="v3"><br><br>
+  
+  <label for="v4" id="variable4">(C) Drag Coefficient</label>
+  <input type="number" id="v4"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script> 
+</body>
+</html>
